@@ -8,6 +8,12 @@ import org.openqa.selenium.support.PageFactory;
 public class MainActivity {
 
 
+    public MainActivity(AppiumDriver driver) {
+        PageFactory.initElements(driver, this);
+        this.driver = driver;
+    }
+
+    public AppiumDriver driver;
     @FindBy(id = "online.sravnitseni:id/view")
     MobileElement searchInput;
     @FindBy(id = "online.sravnitseni:id/textView")
@@ -16,13 +22,8 @@ public class MainActivity {
     MobileElement searchTab;
 
 
-
-    public MainActivity(AppiumDriver driver){
-        PageFactory.initElements(driver, this);
-    }
-
-
 }
+
 
 
 
