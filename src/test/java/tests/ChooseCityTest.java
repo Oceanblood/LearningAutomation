@@ -26,6 +26,7 @@ public class ChooseCityTest extends SetUpTest {
     @Test
     public void choseCityTest(){
         splashScreen.ChoseCitySpb();
+        // Need to add assertions
     }
 
 }
