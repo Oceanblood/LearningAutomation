@@ -30,7 +30,6 @@ public class SplashScreen {
 
 
 
-
     public void ChoseCitySpb(){
         titleText.isDisplayed();
         spbBtn.click();
