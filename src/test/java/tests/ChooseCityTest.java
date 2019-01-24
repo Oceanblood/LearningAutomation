@@ -9,7 +9,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 
-public class ChooseCityTest extends SetUpTest {
+public class ChooseCityTest{
 
 
     public static AppiumDriver driver;
@@ -17,9 +17,10 @@ public class ChooseCityTest extends SetUpTest {
     public static MainActivity mainActivity;
 
     @BeforeClass
-    public static void setUp(){
+    public static void before (){
         splashScreen = new SplashScreen(driver);
         mainActivity = new MainActivity(driver);
+        SetUpTest.InitiateAndroidDriver(driver);
 
     }
 
