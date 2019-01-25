@@ -2,6 +2,7 @@ package PageObjects;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -17,15 +18,15 @@ public class SplashScreen {
     public AppiumDriver driver;
 
     @FindBy (id = "online.sravnitseni:id/ivIcone")
-    MobileElement starIcon;
+    WebElement starIcon;
     @FindBy (id = "online.sravnitseni:id/tvTitle")
-    MobileElement titleText;
+    WebElement titleText;
     @FindBy (id = "online.sravnitseni:id/tvDescription")
-    MobileElement descriptionText;
+    WebElement descriptionText;
     @FindBy (id = "online.sravnitseni:id/btnMsk")
-    MobileElement moscowBtn;
+    WebElement moscowBtn;
     @FindBy (id = "online.sravnitseni:id/btnSpb")
-    MobileElement spbBtn;
+    WebElement spbBtn;
 
 
 

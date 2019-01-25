@@ -2,7 +2,8 @@ package PageObjects;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
-import org.openqa.selenium.support.FindBy;
+import io.appium.java_client.pagefactory.AndroidFindBy;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 public class MainActivity {
@@ -14,12 +15,12 @@ public class MainActivity {
     }
 
     public AppiumDriver driver;
-    @FindBy(id = "online.sravnitseni:id/view")
-    MobileElement searchInput;
-    @FindBy(id = "online.sravnitseni:id/textView")
-    MobileElement popularPricesText;
-    @FindBy(id = "online.sravnitseni:id/menuActionSearch")
-    MobileElement searchTab;
+    @AndroidFindBy (id = "online.sravnitseni:id/view")
+    WebElement searchInput;
+    @AndroidFindBy(id = "online.sravnitseni:id/textView")
+    WebElement popularPricesText;
+    @AndroidFindBy(id = "online.sravnitseni:id/menuActionSearch")
+    WebElement searchTab;
 
 
 }

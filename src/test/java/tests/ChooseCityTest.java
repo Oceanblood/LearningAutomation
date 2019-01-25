@@ -4,6 +4,7 @@ import Driverutils.SetUpTest;
 import PageObjects.MainActivity;
 import PageObjects.SplashScreen;
 import io.appium.java_client.AppiumDriver;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -26,7 +27,7 @@ public class ChooseCityTest extends SetUpTest {
     @Test
     public void choseCityTest(){
         splashScreen.ChoseCitySpb();
-        // Need to add assertions
+        // Need to do assertions
     }
 
 }
