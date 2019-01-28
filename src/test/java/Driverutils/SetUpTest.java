@@ -20,8 +20,8 @@ import static io.appium.java_client.remote.MobileCapabilityType.APP;
          caps.setCapability(PLATFORM_NAME, "ANDROID");
          caps.setCapability(PLATFORM_VERSION, "7.0");
          caps.setCapability(DEVICE_NAME, "06157df61d35cc27");
-         caps.setCapability(APP, "/Users/ilyabelchenko/StudioProjects/sravnitseni-android/app/build/outputs" +
-                 "/apk/debug/online-sravnitseni2-debug-1.0.7-SNAPSHOT.apk");
+         caps.setCapability(APP, "/Users/ilyabelchenko/StudioProjects/sravnitseni-android/app/build/outputs/apk/" +
+                 "debug/online-sravnitseni2-debug-1.0.7-SNAPSHOT.apk");
          caps.setCapability(FULL_RESET, true);
 
          try {

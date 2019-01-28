@@ -2,9 +2,15 @@ package PageObjects;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.pagefactory.AndroidFindBy;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import java.util.concurrent.TimeUnit;
+
 
 public class MainActivity {
 
@@ -15,12 +21,20 @@ public class MainActivity {
     }
 
     public AppiumDriver driver;
-    @AndroidFindBy (id = "online.sravnitseni:id/view")
+    public WebDriverWait webDriverWait;
+    @FindBy (id = "online.sravnitseni:id/view")
     WebElement searchInput;
-    @AndroidFindBy(id = "online.sravnitseni:id/textView")
+    @FindBy(id = "online.sravnitseni:id/textView")
     WebElement popularPricesText;
-    @AndroidFindBy(id = "online.sravnitseni:id/menuActionSearch")
+    @FindBy(id = "online.sravnitseni:id/menuActionSearch")
     WebElement searchTab;
+
+
+    public void getSearchTab(){
+        webDriverWait.until(ExpectedConditions.elementToBeSelected(By.id("online.sravnitseni:id/menuActionSearch")));
+        searchTab.isDisplayed();
+        searchTab.isSelected();
+    }
 
 
 }
