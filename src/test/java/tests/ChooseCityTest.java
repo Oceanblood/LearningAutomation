@@ -1,6 +1,7 @@
 package tests;
 
 import Driverutils.SetUpTest;
+import Driverutils.WaitActions;
 import PageObjects.MainActivity;
 import PageObjects.SplashScreen;
 import io.appium.java_client.AppiumDriver;
@@ -17,7 +18,7 @@ public class ChooseCityTest extends SetUpTest {
     public static AppiumDriver driver;
     public static SplashScreen splashScreen;
     public static MainActivity mainActivity;
-    public static WebDriverWait webDriverWait;
+    public static WaitActions waitActions;
 
     @BeforeClass
     public static void setUp() {
@@ -37,11 +38,14 @@ public class ChooseCityTest extends SetUpTest {
         mainActivity.getSearchTab();
 
 
+
+
+
     }
 
-       // @AfterClass
-        //public static void teardown () {
-        //    driver.quit();
-        //}
+        @AfterClass
+        public static void teardown () {
+            driver.quit();
+        }
 
 }

@@ -1,5 +1,6 @@
 package PageObjects;
 
+import Driverutils.WaitActions;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import org.openqa.selenium.By;
@@ -22,6 +23,7 @@ public class MainActivity {
 
     public AppiumDriver driver;
     public WebDriverWait webDriverWait;
+    public WaitActions waitActions;
     @FindBy (id = "online.sravnitseni:id/view")
     WebElement searchInput;
     @FindBy(id = "online.sravnitseni:id/textView")
@@ -31,9 +33,11 @@ public class MainActivity {
 
 
     public void getSearchTab(){
-        webDriverWait.until(ExpectedConditions.elementToBeSelected(By.id("online.sravnitseni:id/menuActionSearch")));
+//        webDriverWait.until(ExpectedConditions.elementToBeSelected(By.id("online.sravnitseni:id/menuActionSearch")));
+        waitActions.waitUntilElementDisplayed(searchTab,driver);
         searchTab.isDisplayed();
         searchTab.isSelected();
+
     }
 
 
