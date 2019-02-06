@@ -18,7 +18,6 @@ public class ChooseCityTest extends SetUpTest {
     public static AppiumDriver driver;
     public static SplashScreen splashScreen;
     public static MainActivity mainActivity;
-    public static WaitActions waitActions;
 
     @BeforeClass
     public static void setUp() {
@@ -30,7 +29,11 @@ public class ChooseCityTest extends SetUpTest {
     @Test
     public void choseSpbTest() {
         splashScreen.ChoseCitySpb();
+      //  Assert.assertTrue(mainActivity.waitActions.waitUntilElementDisplayed(s););
+       // Assert.assertTrue(mainActivity.getSearchTab().isDisplayed());
     }
+
+
 
     @Test
     public void choseMoscowTest(){

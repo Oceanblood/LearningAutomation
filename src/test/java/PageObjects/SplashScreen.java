@@ -41,11 +41,14 @@ public class SplashScreen {
         titleText.isDisplayed();
         spbBtn.click();
        // webDriverWait.until(ExpectedConditions.elementToBeSelected(By.id("online.sravnitseni:id/menuActionSearch")));
+        // need to assert element
     }
 
     public void ChoseCityMoscow(){
         titleText.isDisplayed();
         moscowBtn.click();
+        // need to assert element
+
 
     }
 

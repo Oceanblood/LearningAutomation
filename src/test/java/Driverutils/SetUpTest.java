@@ -29,10 +29,7 @@ import static io.appium.java_client.remote.MobileCapabilityType.APP;
          } catch (MalformedURLException e) {
              e.printStackTrace();
          }
-
-
-         AppiumDriver d = null;
-         return d;
+         return null;
      }
  }
 
